@@ -23,18 +23,20 @@
 - Empowers analysts to submit comprehensive incident reports including a custom title, severity rating, threat category, affected hosts, and recommended mitigation steps. Reports are stored with timestamps and displayed in a dedicated dashboard for audit and analysis.
 
 **Threat Analytics & Analyst Performance Scoring**
-- Includes a visual analytics panel that summarizes SIEM alert activity and analyst accuracy
+- Includes a comprehensive analytics panel that provides real-time visibility into SIEM alert activity, displaying total alerts, critical alert counts, high severity rates, and analyst      performance metrics
    - A detailed Analyst Report Card showing key metrics:
         - Dismissed False Positives
         - Escalated True Threats
         - Misclassified Alerts
         - Total Actions
-   - A performance grade that calculates the number of correct / incorrect actions and displays a grade from (A - F)
+   - Features a real-time Performance Grade system (A–F) that evaluates analyst accuracy by calculating the ratio of correct actions — including dismissed false positives, escalated true       threats, and correct investigations — against misclassified alerts, and assigns a grade based on overall performance.
         - A: >= 90%
         - B: 80-89%
         - C: 70-79%
         - D: 60-69%
         - F: < 60%
+
+![Analytics](./assets/ghost-siem-demo-3.png)
 
 **SOC-Themed Interface with Visual Feedback**
 - Delivers a responsive, dark-mode UI enhanced by ghost mascots, toast alerts, animations, and interactive elements to reflect triage status and user input in real time.
