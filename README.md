@@ -64,12 +64,11 @@ False positives are randomly injected within the log stream to evaluate the anal
 
 ![Patterns Tab](./assets/ghost-siem-demo-4.png)
 
-- Grouped alerts are displayed in the Patterns Tab, which features a toggle view between:
-     - **Active Threats:** Ongoing scenarios requiring analyst attention
+- Grouped alerts are displayed in the Patterns Tab, which has two different toggable views:
+  
+     - **Active Threats:** Unresolved scenarios that require analyst attention
        
-     - **Past Incidents:** Resolved, escalated, or investigated threats, stored for audit trails and post-incident review
-
-This approach mirrors how real-world SIEM platforms correlate events to detect and respond to complex, multi-stage attacks.
+     - **Past Incidents:** Previously investigated, escalated, or dismissed scenarios, preserved for audit and review
 
 ![Past Incidents](./assets/ghost-siem-demo-7.png)
 
