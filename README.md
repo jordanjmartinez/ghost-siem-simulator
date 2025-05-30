@@ -10,23 +10,23 @@ G.H.O.S.T. (Guided Hub for Operations & Security Triage) is a full-stack SIEM (S
 **Simulated Real-Time Alert Generation**
 - Generates and streams security event logs with dynamic attack scenarios, including false positives, categorized by threat type and severity for realistic SOC training.
 
-Grouped Threat Detection & Pattern Recognition
-*Automatically clusters related logs by scenario ID, allowing analysts to triage threats based on contextual attack patterns instead of isolated events.
+**Grouped Threat Detection & Pattern Recognition**
+- Automatically clusters related logs by scenario ID, allowing analysts to triage threats based on contextual attack patterns instead of isolated events.
 
-Interactive Analyst Workflow Actions
-*Enables actionable decision-making through built-in analyst responses: Investigate, Escalate, and Dismiss, each triggering state changes and analytics updates.
+**Interactive Analyst Workflow Actions**
+- Enables actionable decision-making through built-in analyst responses: Investigate, Escalate, and Dismiss, each triggering state changes and analytics updates.
 
-Structured Incident Reporting with IOC Management
-*Includes a professional-grade reporting system where analysts document incident details, assign threat categories, and tag indicators of compromise (IOCs) using chip-style inputs with deduplication.
+**Structured Incident Reporting with Threat Classification**
+- Empowers analysts to submit comprehensive incident reports including a custom title, severity rating, threat category, affected hosts, and recommended mitigation steps. Reports are stored with timestamps and displayed in a dedicated dashboard for audit and analysis.
 
-Integrated Threat Analytics & Analyst Performance Scoring
-*Features a Splunk-style dashboard with charts showing threat distributions, alert severity breakdowns, and analyst metrics (accuracy, false positive rate, and resolution time).
+**Integrated Threat Analytics & Analyst Performance Scoring**
+- Features a Splunk-style dashboard with charts showing threat distributions, alert severity breakdowns, and analyst metrics (accuracy, false positive rate, and resolution time).
 
-Immersive SOC-Themed Interface with Visual Feedback
-*Delivers a responsive, dark-mode UI enhanced by ghost mascots, toast alerts, animations, and interactive elements to reflect triage status and user input in real time.
+**SOC-Themed Interface with Visual Feedback**
+- Delivers a responsive, dark-mode UI enhanced by ghost mascots, toast alerts, animations, and interactive elements to reflect triage status and user input in real time.
 
-Historical & Active Threat View Toggle
-*Provides seamless switching between active scenarios and historical incident reports to reinforce audit trails and post-incident analysis.
+**Active & Past Incidents Threat View Toggle**
+- Provides seamless switching between active scenarios and historical incident reports to reinforce audit trails and post-incident analysis.
 
 
 ---
