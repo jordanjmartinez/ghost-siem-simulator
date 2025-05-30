@@ -33,7 +33,7 @@ const AnalystReportCard = ({ report }) => {
 
       <div className="divide-y divide-dashed divide-gray-700 text-sm text-gray-300 font-mono">
         <div className="flex justify-between py-3">
-          <span>Resolved False Positives</span>
+          <span>Dismissed False Positives</span>
           <span className="text-white font-semibold">{report.resolved_false_positives}</span>
         </div>
         <div className="flex justify-between py-3">

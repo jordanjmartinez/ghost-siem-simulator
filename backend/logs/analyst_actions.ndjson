@@ -1,0 +1,4 @@
+{"timestamp": "2025-05-30T17:41:45.433547+00:00", "scenario_id": "772d184f-7ea1-42d0-9fb5-2daa8287b620", "action": "resolve", "label": "marketing_upload_false_positive"}
+{"timestamp": "2025-05-30T17:42:29.940289+00:00", "scenario_id": "721ff6a7-1003-41c2-a25d-214b4d31664d", "action": "escalate", "label": "lateral_movement_1"}
+{"timestamp": "2025-05-30T17:44:20.055793+00:00", "scenario_id": "4fe98368-6deb-4620-986b-ec476754a2bd", "action": "investigate", "label": "defense_evasion_policy"}
+{"timestamp": "2025-05-30T17:47:38.886881+00:00", "scenario_id": "afdea61c-636e-4fc6-9937-a830100f56b0", "action": "resolve", "label": "insider_threat_it"}
