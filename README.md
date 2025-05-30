@@ -47,8 +47,24 @@ Displayed in the Events Tab, the interface supports:
 
 This system forms the core of **G.H.O.S.T.’s** interactive alert simulation, offering a hands-on training loop for analysts to detect, classify, and respond to evolving threat patterns.
 
-## **Grouped Threat Detection & Pattern Recognition**
-- Automatically clusters related logs by scenario ID, allowing analysts to triage threats based on contextual attack patterns instead of isolated events.
+## **Threat Correlation & Scenario-Based Triage**
+Automatically clusters related log entries into cohesive threat scenarios using a shared scenario ID, allowing analysts to investigate patterns of malicious activity rather than isolated events.
+- Groups are formed based on predefined attack sequences, such as multi-step exploits (e.g., initial access → command execution → data exfiltration).
+
+- Each group is labeled with a threat category and severity level to assist with triage and prioritization.
+
+- Analysts can take decisive actions — Investigate, Escalate, or Dismiss — at the scenario level, enabling efficient triage and resolution of grouped threats.
+
+- Grouped alerts are displayed in the Patterns Tab, which features a toggle view between:
+     - **Active Threats:** Ongoing scenarios requiring analyst attention
+       
+     - **Past Incidents:** Resolved, escalated, or investigated threats, stored for audit trails and post-incident review
+
+This approach mirrors how real-world SIEM platforms correlate events to detect and respond to complex, multi-stage attacks.
+
+![Patterns Tab](./assets/ghost-siem-demo-4.png)
+
+![Past Incidents](./assets/ghost-siem-demo-7.png)
 
 ## **Interactive Analyst Workflow Actions**
 - Enables actionable decision-making through built-in analyst responses: Investigate, Escalate, and Dismiss, each triggering state changes and analytics updates.
@@ -105,32 +121,7 @@ Features a real-time Performance Grade system (A–F) that evaluates analyst acc
 
 ![Analytics](./assets/ghost-siem-demo-3.png)
 
-**SOC-Themed Interface with Visual Feedback**
-- Delivers a responsive, dark-mode UI enhanced by ghost mascots, toast alerts, animations, and interactive elements to reflect triage status and user input in real time.
+## **SOC-Themed Interface with Visual Feedback**
+Delivers a responsive, dark-mode UI enhanced by ghost mascots, toast alerts, animations, and interactive elements to reflect triage status and user input in real time.
 
-**Active & Past Incidents Threat View Toggle**
-- Provides seamless switching between active scenarios and historical incident reports to reinforce audit trails and post-incident analysis.
-
-
-
-
-# Interface Overview
-
-
-### Event Logs View  
-Events display real-time logs as they are generated into the event table. Analysts can click on any log entry to expand detailed metadata including timestamp, source, hostname, and event type. This table is critical for identifying suspicious or malicious activity.  
-
-![Event Logs](./assets/ghost-siem-demo-2.png)
-
-
-### Patterns Tab  
-The Patterns tab displays grouped alerts based on distinct threat scenarios. Each group aggregates related events that share a common pattern of suspicious activity, such as brute-force attempts, insider threats, or command-and-control behavior. Analysts can take action on each group by investigating, escalating, or resolving it, with all status changes reflected in the dashboard for continuous tracking and visibility.  
-
-![Patterns Tab](./assets/ghost-siem-demo-4.png)
-
-
-### Past Incidents 
-The Past Incidents section of the Patterns tab displays all previously addressed scenarios, including those that were dismissed, escalated, or marked as under investigation. This view helps analysts review completed cases, understand prior decisions, and track how each threat was managed throughout the workflow.  
-
-![Past Incidents](./assets/ghost-siem-demo-7.png)
 
