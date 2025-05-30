@@ -54,7 +54,7 @@ False positives are randomly injected within the log stream to evaluate the anal
 
 - Groups are formed based on predefined attack sequences, such as multi-step exploits (e.g., initial access → command execution → data exfiltration).
 
-- Each group is labeled with a threat category and severity level to assist with triage and prioritization.
+- Each group is labeled with a Notable Event type and a severity level to assist with triage and prioritization.
 
 - Analysts can take decisive actions — Investigate, Escalate, or Dismiss
   
