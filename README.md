@@ -143,3 +143,16 @@ Delivers a responsive, dark-mode UI enhanced by ghost mascots, toast alerts, ani
  ![Visual](./assets/ghost-siem-demo-10.png)
 
 
+ # Use Cases
+
+**G.H.O.S.T.** is built for cybersecurity students, entry-level analysts, and anyone looking to gain hands-on experience with real-world SOC workflows. Whether you're preparing for a blue team role or building a cybersecurity portfolio, this simulation helps you practice threat detection, incident triage, and reporting in a controlled, interactive environment.
+ 
+- Practice analyst workflows in a simulated SOC environment
+  
+- Demonstrate threat detection and incident response skills
+  
+- Train new blue team members or students in realistic triage scenarios
+  
+- Showcase full-stack security engineering capabilities in a portfolio project
+
+
