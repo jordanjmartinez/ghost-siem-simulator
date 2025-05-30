@@ -4,7 +4,7 @@
    
 # Introduction
 
-**G.H.O.S.T.** (Guided Help for Operations & Security Triage) is a full-stack SIEM (Security Information and Event Management) simulation that replicates a real-world Security Operations Center (SOC) environment. It includes real-time log ingestion, alert detection, incident reporting workflows, and interactive threat analytics. Designed for cybersecurity analyst training, scenario-based threat response, and demonstrating SOC processes in a hands-on setting.
+**G.H.O.S.T.** (Guided Help for Operations & Security Triage) is a full-stack **Security Information and Event Management** (SIEM) simulation that replicates a real-world **Security Operations Center** (SOC) environment. It includes real-time log ingestion, alert detection, incident reporting workflows, and interactive threat analytics. Designed for cybersecurity analyst training, scenario-based threat response, and demonstrating SOC processes in a hands-on setting.
 
 # Features 
 
@@ -22,8 +22,19 @@
 **Structured Incident Reporting with Threat Classification**
 - Empowers analysts to submit comprehensive incident reports including a custom title, severity rating, threat category, affected hosts, and recommended mitigation steps. Reports are stored with timestamps and displayed in a dedicated dashboard for audit and analysis.
 
-**Integrated Threat Analytics & Analyst Performance Scoring**
-- Features a Splunk-style dashboard with charts showing threat distributions, alert severity breakdowns, and analyst metrics (accuracy, false positive rate, and resolution time).
+**Threat Analytics & Analyst Performance Scoring**
+- Includes a visual analytics panel that summarizes SIEM alert activity and analyst accuracy
+   - A detailed Analyst Report Card showing key metrics:
+        - Dismissed False Positives
+        - Escalated True Threats
+        - Misclassified Alerts
+        - Total Actions
+   - A performance grade that calculates the number of correct / incorrect actions and displays a grade from (A - F)
+        - A: >= 90%
+        - B: 80-89%
+        - C: 70-79%
+        - D: 60-69%
+        - F: < 60%
 
 **SOC-Themed Interface with Visual Feedback**
 - Delivers a responsive, dark-mode UI enhanced by ghost mascots, toast alerts, animations, and interactive elements to reflect triage status and user input in real time.
