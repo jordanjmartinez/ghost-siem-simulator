@@ -71,8 +71,6 @@ This approach mirrors how real-world SIEM platforms correlate events to detect a
 
 ![Past Incidents](./assets/ghost-siem-demo-7.png)
 
-## **Interactive Analyst Workflow Actions**
-- Enables actionable decision-making through built-in analyst responses: Investigate, Escalate, and Dismiss, each triggering state changes and analytics updates.
 
 ## **Incident Reporting & Threat Categorization**
 Enables analysts to submit professional-grade incident reports that capture key investigation details for audit, triage, and post-incident review.
