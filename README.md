@@ -1,4 +1,4 @@
-# G.H.O.S.T.-SIEM-Simulation-Project
+# G.H.O.S.T.
 1. Introduction
 2. Features
    
@@ -8,10 +8,27 @@
 
 # Features 
 
-**G.H.O.S.T.** delivers an end-to-end SIEM simulation experience, replicating real-world SOC workflows through live alert generation, grouped threat patterns, analyst decision-making, and structured incident reporting. The platform includes performance analytics, a responsive UI with themed visuals, and seamless toggling between active threats and historical investigations — making it ideal for cybersecurity training, demonstrations, and portfolio showcase.
+**G.H.O.S.T.** delivers an end-to-end SIEM simulation experience, replicating real-world SOC workflows through live alert generation, grouped threat patterns, analyst decision-making, and structured incident reporting. The platform includes performance analytics, a responsive UI with themed visuals, and seamless toggling between active threats and past incidents — making it ideal for cybersecurity training, demonstrations, and portfolio showcase.
 
 ## **Simulated Real-Time Alert Generation**
+
+![Events Tab](./assets/ghost-siem-demo-1.png)
+
 Generates and streams security event logs with dynamic attack scenarios, including false positives, categorized by threat type and severity for realistic SOC training.
+
+Each log entry includes a timestamp, event type, severity level, and descriptive message modeled after realistic enterprise scenarios. These include:
+
+- Command and & Control (C2) via DNS tunneling
+
+- Persistence mechanisms using outbound DNS queries
+
+- PowerShell execution with obfuscated arguments
+
+- Suspicious HTTP requests to known malicious domains
+
+- Login events simulating both valid and anomalous user behavior
+
+The generated logs mimic the diversity and noise found in actual SIEM environments by mixing malicious activity, normal user behavior, and false positives — challenging analysts to distinguish between them accurately.
 
 Displayed in the Events Tab, the interface supports:
 
@@ -34,47 +51,47 @@ This system forms the core of **G.H.O.S.T.’s** interactive alert simulation, o
 ## **Incident Reporting & Threat Categorization**
 Enables analysts to submit professional-grade incident reports that capture key investigation details for audit, triage, and post-incident review.
 
-- Includes an Incident Report Form with the following fields
+Includes an Incident Report Form with the following fields
   
-     - Title
+   - Title
        
-     - Description
+   - Description
        
-     - Severity
+   - Severity
        
-     - Category
+   - Category
        
-     - Affected Hosts
+   - Affected Hosts
        
-     - Mitigation Steps
+   - Mitigation Steps
        
-     - Status
+   - Status
  
 ![Incident Report](./assets/ghost-siem-demo-5.png)
 
 Each report is timestamped and stored for review, and displayed in the Reports Tab, where analysts can:
    
-      - View and manage reports
+   - View and manage reports
         
-      - Edit report details
+   - Edit report details
         
-      - Export reports for documentation and incident tracking
+   - Export reports for documentation and incident tracking
 
  ![Reports Tab](./assets/ghost-siem-demo-6.png)
 
 ## **Threat Analytics & Analyst Performance Scoring**
 Includes a comprehensive analytics panel that provides real-time visibility into SIEM alert activity, displaying total alerts, critical alert counts, high severity rates, and analyst performance metrics
   
-- A detailed Analyst Report Card showing key metrics:
+A detailed Analyst Report Card showing key metrics:
      
   - Dismissed False Positives
   - Escalated True Threats
   - Misclassified Alerts
   - Total Actions
           
-   - Features a real-time Performance Grade system (A–F) that evaluates analyst accuracy by calculating the ratio of correct actions — including dismissed false positives, escalated true threats, and                correct investigations — against misclassified alerts, and assigns a grade based on overall performance.
+Features a real-time Performance Grade system (A–F) that evaluates analyst accuracy by calculating the ratio of correct actions — including dismissed false positives, escalated true threats, and                correct investigations — against misclassified alerts, and assigns a grade based on overall performance.
 
-       Grade Scale:
+   **Grade Scale:**
         - A: >= 90%
         - B: 80-89%
         - C: 70-79%
@@ -94,11 +111,6 @@ Includes a comprehensive analytics panel that provides real-time visibility into
 
 # Interface Overview
 
-## Events Tab  
-This is the initial view of the dashboard. When the SOC analyst clicks **Simulate Logs**, the system generates and displays real-time logs in the event table. Selecting **Clear Logs** will remove all current log entries from the view.  
-
----
-![Events Tab](./assets/ghost-siem-demo-1.png)
 
 ### Event Logs View  
 Events display real-time logs as they are generated into the event table. Analysts can click on any log entry to expand detailed metadata including timestamp, source, hostname, and event type. This table is critical for identifying suspicious or malicious activity.  
