@@ -1,0 +1,6 @@
+{"timestamp": "2025-05-29T23:34:05.772092+00:00", "scenario_id": "c3d7bac9-c7d3-4eca-ae0a-15b06efe337d", "action": "resolve", "label": "ddos_attack"}
+{"timestamp": "2025-05-29T23:41:46.397036+00:00", "scenario_id": "89bb17da-bdda-4983-a213-52ec923ae71b", "action": "escalate", "label": "lateral_movement_3"}
+{"timestamp": "2025-05-29T23:52:34.081193+00:00", "scenario_id": "4176c649-cf66-41c1-b9d7-4cd3e135f192", "action": "escalate", "label": "ddos_attack"}
+{"timestamp": "2025-05-29T23:57:51.084640+00:00", "scenario_id": "9f1b9f6e-090b-402e-83bf-289b9a98cfc2", "action": "escalate", "label": "ddos_attack"}
+{"timestamp": "2025-05-30T00:04:20.674711+00:00", "scenario_id": "9a2d0608-37dc-4602-a9d1-d127ff162d69", "action": "investigate", "label": "phishing_credential"}
+{"timestamp": "2025-05-30T00:09:42.131505+00:00", "scenario_id": "40c2eb02-01d8-426c-831e-e6b5960a2747", "action": "investigate", "label": "dlp_false_positive"}
