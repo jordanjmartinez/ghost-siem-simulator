@@ -23,7 +23,7 @@
 - Empowers analysts to submit comprehensive incident reports including a custom title, severity rating, threat category, affected hosts, and recommended mitigation steps. Reports are stored with timestamps and displayed in a dedicated dashboard for audit and analysis.
 
 ## **Threat Analytics & Analyst Performance Scoring**
-Includes a comprehensive analytics panel that provides real-time visibility into SIEM alert activity, displaying total alerts, critical alert counts, high severity rates, and analyst     performance metrics
+Includes a comprehensive analytics panel that provides real-time visibility into SIEM alert activity, displaying total alerts, critical alert counts, high severity rates, and analyst performance metrics
   
    - A detailed Analyst Report Card showing key metrics:
      
@@ -32,8 +32,9 @@ Includes a comprehensive analytics panel that provides real-time visibility into
         - Misclassified Alerts
         - Total Actions
           
-   - Features a real-time Performance Grade system (A–F) that evaluates analyst accuracy by calculating the ratio of correct actions — including dismissed false positives, escalated true       threats, and correct investigations — against misclassified alerts, and assigns a grade based on overall performance.
-     
+   - Features a real-time Performance Grade system (A–F) that evaluates analyst accuracy by calculating the ratio of correct actions — including dismissed false positives, escalated true threats, and                correct investigations — against misclassified alerts, and assigns a grade based on overall performance.
+
+       Grade Scale:
         - A: >= 90%
         - B: 80-89%
         - C: 70-79%
