@@ -49,7 +49,7 @@ False positives are randomly injected within the log stream to evaluate the anal
 
 ![Event Logs](./assets/ghost-siem-demo-2.png)
 
-## **Scenario-Based Threat Grouping**
+## **Scenario-based Threat Grouping**
 Automatically clusters related log entries into cohesive threat scenarios using a shared scenario ID, allowing analysts to investigate patterns of malicious activity rather than isolated events.
 - Groups are formed based on predefined attack sequences, such as multi-step exploits (e.g., initial access → command execution → data exfiltration).
 
