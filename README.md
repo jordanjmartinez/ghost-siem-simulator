@@ -38,6 +38,9 @@ Enables analysts to submit professional-grade incident reports that capture key 
       - Edit report details
       - Export reports for documentation and incident tracking
 
+ ![Incident Report](./assets/ghost-siem-demo-5.png)
+ ![Reports Tab](./assets/ghost-siem-demo-6.png)
+
 ## **Threat Analytics & Analyst Performance Scoring**
 Includes a comprehensive analytics panel that provides real-time visibility into SIEM alert activity, displaying total alerts, critical alert counts, high severity rates, and analyst performance metrics
   
@@ -81,26 +84,12 @@ Events display real-time logs as they are generated into the event table. Analys
 
 ![Event Logs](./assets/ghost-siem-demo-2.png)
 
-### Analytics and Performance  
-The Analytics tab provides a real-time overview of key metrics such as Total Alerts, Critical Alerts, and High Severity Rate. It also includes a performance report card that evaluates the analyst’s actions and assigns a grade based on investigation accuracy and response decisions.  
-
-![Analytics](./assets/ghost-siem-demo-3.png)
 
 ### Patterns Tab  
 The Patterns tab displays grouped alerts based on distinct threat scenarios. Each group aggregates related events that share a common pattern of suspicious activity, such as brute-force attempts, insider threats, or command-and-control behavior. Analysts can take action on each group by investigating, escalating, or resolving it, with all status changes reflected in the dashboard for continuous tracking and visibility.  
 
 ![Patterns Tab](./assets/ghost-siem-demo-4.png)
 
-
-### Incident Report Form  
-After completing an investigation, the analyst documents the findings by submitting an incident report. This includes selecting a threat category and severity level, describing the observed behavior, identifying the affected hosts, and outlining recommended mitigation steps. The report helps maintain an audit trail for response efforts and supports future threat analysis.  
-
-![Incident Report](./assets/ghost-siem-demo-5.png)
-
-### Reports Tab  
-Shows all submitted incident reports in a structured format. Reports can be edited, exported, and reviewed at any time for audit and tracking purposes.  
-
-![Reports Tab](./assets/ghost-siem-demo-6.png)
 
 ### Past Incidents 
 The Past Incidents section of the Patterns tab displays all previously addressed scenarios, including those that were dismissed, escalated, or marked as under investigation. This view helps analysts review completed cases, understand prior decisions, and track how each threat was managed throughout the workflow.  
