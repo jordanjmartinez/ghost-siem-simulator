@@ -1,10 +1,17 @@
 # G.H.O.S.T. - A Full-Stack SOC Simulator for Cybersecurity Training
+
+## Table of Contents
+
 1. Introduction
 2. Features
+3. Installation & Setup
+4. Use Cases
    
 # Introduction
 
-**G.H.O.S.T.** (Guided Help for Operations & Security Triage) is a full-stack **Security Information and Event Management** (SIEM) simulation that replicates a real-world **Security Operations Center** (SOC) environment. It includes real-time log ingestion, alert detection, incident reporting workflows, and interactive threat analytics. Designed for cybersecurity analyst training, scenario-based threat response, and demonstrating SOC processes in a hands-on setting.
+**G.H.O.S.T.** (Guided Help for Operations & Security Triage) is a full-stack **Security Information and Event Management** (SIEM) simulation that replicates a real-world **Security Operations Center** (SOC) environment.
+
+It includes real-time log ingestion, alert detection, incident reporting workflows, and interactive threat analytics. Designed for cybersecurity analyst training, scenario-based threat response, and demonstrating SOC processes in a hands-on setting.
 
 # Features 
 
@@ -21,7 +28,7 @@ Generates and streams security event logs with dynamic attack scenarios, includi
 
 Each log entry includes a timestamp, event type, severity level, and descriptive message modeled after realistic enterprise scenarios. These include:
 
-- Command and & Control (C2) via DNS tunneling
+- Command & Control (C2) via DNS tunneling
 
 - Persistence mechanisms using outbound DNS queries
 
