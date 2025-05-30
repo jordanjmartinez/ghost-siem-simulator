@@ -19,18 +19,34 @@
 **Interactive Analyst Workflow Actions**
 - Enables actionable decision-making through built-in analyst responses: Investigate, Escalate, and Dismiss, each triggering state changes and analytics updates.
 
-**Structured Incident Reporting with Threat Classification**
-- Empowers analysts to submit comprehensive incident reports including a custom title, severity rating, threat category, affected hosts, and recommended mitigation steps. Reports are stored with timestamps and displayed in a dedicated dashboard for audit and analysis.
+## **Structured Incident Reporting with Threat Classification**
+Enables analysts to submit professional-grade incident reports that capture key investigation details for audit, triage, and post-incident review.
+
+- Includes an Incident Report Form with the following fields
+  
+     - Title
+     - Description
+     - Severity
+     - Category
+     - Affected Hosts
+     - Mitigation Steps
+     - Status
+
+ - Each report is timestamped and stored for review, and displayed in the Reports Tab, where analysts can:
+   
+      - View and manage reports
+      - Edit report details
+      - Export reports for documentation and incident tracking
 
 ## **Threat Analytics & Analyst Performance Scoring**
 Includes a comprehensive analytics panel that provides real-time visibility into SIEM alert activity, displaying total alerts, critical alert counts, high severity rates, and analyst performance metrics
   
-   - A detailed Analyst Report Card showing key metrics:
+- A detailed Analyst Report Card showing key metrics:
      
-        - Dismissed False Positives
-        - Escalated True Threats
-        - Misclassified Alerts
-        - Total Actions
+  - Dismissed False Positives
+  - Escalated True Threats
+  - Misclassified Alerts
+  - Total Actions
           
    - Features a real-time Performance Grade system (A–F) that evaluates analyst accuracy by calculating the ratio of correct actions — including dismissed false positives, escalated true threats, and                correct investigations — against misclassified alerts, and assigns a grade based on overall performance.
 
