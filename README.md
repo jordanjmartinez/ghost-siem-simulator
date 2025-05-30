@@ -17,7 +17,7 @@ It includes real-time log ingestion, alert detection, incident reporting, and th
 
 **G.H.O.S.T.** includes a full suite of features designed to simulate a real-world SIEM environment. 
 
-It supports simulated live alert generation, scenario-based threat grouping, analyst triage actions, and incident reporting. 
+It supports simulated live alert generation, grouped threat patterns, analyst triage actions, and incident reporting. 
 
 Analysts can track their performance over time through a built-in analytics dashboard
 
@@ -56,12 +56,13 @@ False positives are randomly injected within the log stream to evaluate the anal
 
 - Each group is labeled with a threat category and severity level to assist with triage and prioritization.
 
-- Analysts can take decisive actions — Investigate, Escalate, or Dismiss — at the scenario level, enabling efficient triage and resolution of grouped threats:
-  - **Investigate:** Launches the incident report workflow for in-depth analysis and documentation
+- Analysts can take decisive actions — Investigate, Escalate, or Dismiss
+  
+  - **Investigate:** Initiates an in-depth investigation and opens the incident report workflow
 
-  - **Escalate:** Flags the scenario as a confirmed threat, increasing critical alert counts and impacting performance metrics
+  - **Escalate:** Flags the scenario as a confirmed threat
 
-  - **Dismiss:** Marks the scenario as a false positive, contributing to false positive tracking in the Analyst Report Card
+  - **Dismiss:** Marks the scenario as a false positive
 
 - Grouped alerts are displayed in the Patterns Tab, which features a toggle view between:
      - **Active Threats:** Ongoing scenarios requiring analyst attention
