@@ -49,18 +49,6 @@ False positives are randomly injected within the log stream to evaluate the anal
 
 ![Event Logs](./assets/ghost-siem-demo-2.png)
 
-Displayed in the Events Tab, the interface supports:
-
-- Live pagination and adjustable rows per page
-
-- Search and filtering for specific logs by keyword
-
-- A Simulate Events button that triggers a new batch of synthetic logs, including both benign and malicious behaviors
-
-- A Clear Logs button that resets the event feed, removing all previously generated logs for a fresh session or scenario restart
-
-This system forms the core of **G.H.O.S.T.’s** interactive alert simulation, offering a hands-on training loop for analysts to detect, classify, and respond to evolving threat patterns.
-
 ## **Threat Correlation & Scenario-Based Triage**
 Automatically clusters related log entries into cohesive threat scenarios using a shared scenario ID, allowing analysts to investigate patterns of malicious activity rather than isolated events.
 - Groups are formed based on predefined attack sequences, such as multi-step exploits (e.g., initial access → command execution → data exfiltration).
