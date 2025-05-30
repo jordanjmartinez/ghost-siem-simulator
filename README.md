@@ -1,4 +1,4 @@
-# ghost-siem-simulator
+# G.H.O.S.T.-SIEM-Simulation-Project
 1. Introduction
 2. Features
    
@@ -23,7 +23,7 @@
 - Empowers analysts to submit comprehensive incident reports including a custom title, severity rating, threat category, affected hosts, and recommended mitigation steps. Reports are stored with timestamps and displayed in a dedicated dashboard for audit and analysis.
 
 ## **Threat Analytics & Analyst Performance Scoring**
-- Includes a comprehensive analytics panel that provides real-time visibility into SIEM alert activity, displaying total alerts, critical alert counts, high severity rates, and analyst      performance metrics
+Includes a comprehensive analytics panel that provides real-time visibility into SIEM alert activity, displaying total alerts, critical alert counts, high severity rates, and analyst     performance metrics
   
    - A detailed Analyst Report Card showing key metrics:
      
@@ -49,15 +49,7 @@
 - Provides seamless switching between active scenarios and historical incident reports to reinforce audit trails and post-incident analysis.
 
 
----
 
-## Tech Stack
-
-- **Frontend:** React, TailwindCSS, Recharts, Toastify
-- **Backend:** Flask (Python), Faker, NDJSON logging
-- **Data:** Simulated attack scenarios, false positives, and analyst actions
-
----
 
 # Interface Overview
 
