@@ -1,11 +1,14 @@
 # ghost-siem-simulator
 1. Introduction
+2. Features
    
 # Introduction
 
-G.H.O.S.T. (Guided Hub for Operations & Security Triage) is a full-stack SIEM (Security Information and Event Management) simulation that replicates a real-world Security Operations Center (SOC) environment. It includes real-time log ingestion, alert detection, incident reporting workflows, and interactive threat analytics. Designed for cybersecurity analyst training, scenario-based threat response, and demonstrating SOC processes in a hands-on setting.
+**G.H.O.S.T.** (Guided Help for Operations & Security Triage) is a full-stack SIEM (Security Information and Event Management) simulation that replicates a real-world Security Operations Center (SOC) environment. It includes real-time log ingestion, alert detection, incident reporting workflows, and interactive threat analytics. Designed for cybersecurity analyst training, scenario-based threat response, and demonstrating SOC processes in a hands-on setting.
 
 # Features 
+
+**G.H.O.S.T.** delivers an end-to-end SIEM simulation experience, replicating real-world SOC workflows through live alert generation, grouped threat patterns, analyst decision-making, and structured incident reporting. The platform includes performance analytics, a responsive UI with themed visuals, and seamless toggling between active threats and historical investigations — making it ideal for cybersecurity training, demonstrations, and portfolio showcase.
 
 **Simulated Real-Time Alert Generation**
 - Generates and streams security event logs with dynamic attack scenarios, including false positives, categorized by threat type and severity for realistic SOC training.
