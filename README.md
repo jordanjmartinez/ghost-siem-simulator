@@ -15,7 +15,11 @@ It includes real-time log ingestion, alert detection, incident reporting, and th
 
 # Features 
 
-**G.H.O.S.T.** delivers an end-to-end SIEM simulation experience, replicating real-world SOC workflows through live alert generation, grouped threat patterns, analyst decision-making, and structured incident reporting. The platform includes performance analytics, a responsive UI with themed visuals, and seamless toggling between active threats and past incidents — making it ideal for cybersecurity training, demonstrations, and portfolio showcase.
+**G.H.O.S.T.** includes a full suite of features designed to simulate a real-world SIEM environment. 
+
+It supports live alert generation, scenario-based threat grouping, analyst triage actions, and incident reporting. 
+
+Analysts can track their performance over time through a built-in analytics dashboard
 
 ## **Simulated Real-Time Alert Generation**
 
@@ -23,25 +27,25 @@ It includes real-time log ingestion, alert detection, incident reporting, and th
 
 Clicking Simulate Events generates a stream of security event logs from various log sources (e.g., firewall, application, operating system), simulating normal background traffic commonly observed in a real SIEM environment.
 
-After several normal benign logs are generated, the simulator injects a threat scenario, mimicking a coordinated attack by a malicious actor. These attack patterns are structured to resemble real-world tactics.
+After several normal benign logs are generated, the simulator injects a threat scenario, mimicking a coordinated attack by a malicious actor.
 
 ![Attack Scenario](./assets/ghost-siem-demo-9.png)
 
-These tactics cover a wide range of threat patterns, allowing analysts to practice detecting diverse adversarial behaviors. Patterns include:
+These attack patterns are structured to resemble tactics that hackers use in real-world scenarios, allowing analysts to practice detecting many different threat types. Simulated patterns include:
 
-- Brute Force Attacks – repeated login attempts to gain unauthorized access
+- **Brute Force Attacks**
 
-- Command & Control (C2) – beaconing to external domains via DNS or HTTP
+- **Command & Control (C2)** 
 
-- Persistence Mechanisms – outbound connections to low-reputation domains
+- **Persistence Mechanisms**
 
-- Malware Execution – encoded or obfuscated PowerShell activity
+- **Malware Execution**
 
-- Data Exfiltration – sensitive file transfers or unauthorized web requests
+- **Data Exfiltration**
 
-- Insider Threats – abnormal activity from trusted internal users
+- **Insider Threats**
 
-There is also the possibility of false positive events, which are intentionally mixed into the log stream to challenge analysts’ ability to differentiate between legitimate threats and harmless anomalies — reinforcing critical thinking and triage accuracy.
+False positives are randomly injected within the log stream to evaluate the analyst’s ability to accurately distinguish between true threats and harmless activity.
 
 ![Event Logs](./assets/ghost-siem-demo-2.png)
 
