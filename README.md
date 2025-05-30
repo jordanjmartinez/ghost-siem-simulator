@@ -10,8 +10,20 @@
 
 **G.H.O.S.T.** delivers an end-to-end SIEM simulation experience, replicating real-world SOC workflows through live alert generation, grouped threat patterns, analyst decision-making, and structured incident reporting. The platform includes performance analytics, a responsive UI with themed visuals, and seamless toggling between active threats and historical investigations — making it ideal for cybersecurity training, demonstrations, and portfolio showcase.
 
-**Simulated Real-Time Alert Generation**
-- Generates and streams security event logs with dynamic attack scenarios, including false positives, categorized by threat type and severity for realistic SOC training.
+## **Simulated Real-Time Alert Generation**
+Generates and streams security event logs with dynamic attack scenarios, including false positives, categorized by threat type and severity for realistic SOC training.
+
+Displayed in the Events Tab, the interface supports:
+
+- Live pagination and adjustable rows per page
+
+- Search and filtering for specific logs by keyword
+
+- A Simulate Events button that triggers a new batch of synthetic logs, including both benign and malicious behaviors
+
+- A Clear Logs button that resets the event feed, removing all previously generated logs for a fresh session or scenario restart
+
+This system forms the core of **G.H.O.S.T.’s** interactive alert simulation, offering a hands-on training loop for analysts to detect, classify, and respond to evolving threat patterns.
 
 **Grouped Threat Detection & Pattern Recognition**
 - Automatically clusters related logs by scenario ID, allowing analysts to triage threats based on contextual attack patterns instead of isolated events.
@@ -25,20 +37,29 @@ Enables analysts to submit professional-grade incident reports that capture key 
 - Includes an Incident Report Form with the following fields
   
      - Title
+       
      - Description
+       
      - Severity
+       
      - Category
+       
      - Affected Hosts
+       
      - Mitigation Steps
+       
      - Status
+ 
+![Incident Report](./assets/ghost-siem-demo-5.png)
 
- - Each report is timestamped and stored for review, and displayed in the Reports Tab, where analysts can:
+Each report is timestamped and stored for review, and displayed in the Reports Tab, where analysts can:
    
       - View and manage reports
+        
       - Edit report details
+        
       - Export reports for documentation and incident tracking
 
- ![Incident Report](./assets/ghost-siem-demo-5.png)
  ![Reports Tab](./assets/ghost-siem-demo-6.png)
 
 ## **Threat Analytics & Analyst Performance Scoring**
