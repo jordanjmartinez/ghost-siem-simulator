@@ -8,7 +8,7 @@ G.H.O.S.T. (Guided Hub for Operations & Security Triage) is a full-stack SIEM (S
 # Features 
 
 **Simulated Real-Time Alert Generation**
-*Generates and streams security event logs with dynamic attack scenarios, including false positives, categorized by threat type and severity for realistic SOC training.
+- Generates and streams security event logs with dynamic attack scenarios, including false positives, categorized by threat type and severity for realistic SOC training.
 
 Grouped Threat Detection & Pattern Recognition
 *Automatically clusters related logs by scenario ID, allowing analysts to triage threats based on contextual attack patterns instead of isolated events.
