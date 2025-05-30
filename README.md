@@ -21,25 +21,27 @@ It includes real-time log ingestion, alert detection, incident reporting, and th
 
 ![Events Tab](./assets/ghost-siem-demo-1.png)
 
-Clicking on Simulate Events generates a stream of security event logs from various log sources (Firewall, Application) acting as normal event traffic in a SIEM environment.
+Clicking Simulate Events generates a stream of security event logs from various log sources (e.g., firewall, application, operating system), simulating normal background traffic commonly observed in a real SIEM environment.
 
-After a couple of logs, an event will be injected into the SIEM mimicking an attack from a hacker
+After several normal benign logs are generated, the simulator injects a threat scenario, mimicking a coordinated attack by a malicious actor. These attack patterns are structured to resemble real-world tactics.
 
 ![Attack Scenario](./assets/ghost-siem-demo-9.png)
 
-Each log entry includes a timestamp, event type, severity level, and descriptive message modeled after realistic enterprise scenarios. These include:
+These tactics cover a wide range of threat patterns, allowing analysts to practice detecting diverse adversarial behaviors. Patterns include:
 
-- Command & Control (C2) via DNS tunneling
+- Brute Force Attacks – repeated login attempts to gain unauthorized access
 
-- Persistence mechanisms using outbound DNS queries
+- Command & Control (C2) – beaconing to external domains via DNS or HTTP
 
-- PowerShell execution with obfuscated arguments
+- Persistence Mechanisms – outbound connections to low-reputation domains
 
-- Suspicious HTTP requests to known malicious domains
+- Malware Execution – encoded or obfuscated PowerShell activity
 
-- Login events simulating both valid and anomalous user behavior
+- Data Exfiltration – sensitive file transfers or unauthorized web requests
 
-The generated logs mimic the diversity and noise found in actual SIEM environments by mixing malicious activity, normal user behavior, and false positives — challenging analysts to distinguish between them accurately.
+- Insider Threats – abnormal activity from trusted internal users
+
+There is also the possibility of false positive events, which are intentionally mixed into the log stream to challenge analysts’ ability to differentiate between legitimate threats and harmless anomalies — reinforcing critical thinking and triage accuracy.
 
 ![Event Logs](./assets/ghost-siem-demo-2.png)
 
