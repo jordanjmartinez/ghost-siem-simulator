@@ -1,4 +1,4 @@
-# G.H.O.S.T.
+# G.H.O.S.T.- A Full-Stack SOC Simulator for Cybersecurity Training
 1. Introduction
 2. Features
    
@@ -109,18 +109,25 @@ Includes a comprehensive analytics panel that provides real-time visibility into
 A detailed Analyst Report Card showing key metrics:
      
   - Dismissed False Positives
+    
   - Escalated True Threats
+    
   - Misclassified Alerts
+    
   - Total Actions
           
 Features a real-time Performance Grade system (A–F) that evaluates analyst accuracy by calculating the ratio of correct actions — including dismissed false positives, escalated true threats, and                correct investigations — against misclassified alerts, and assigns a grade based on overall performance.
 
    **Grade Scale:**
-        - A: >= 90%
-        - B: 80-89%
-        - C: 70-79%
-        - D: 60-69%
-        - F: < 60%
+   - A: >= 90%
+        
+   - B: 80-89%
+        
+   - C: 70-79%
+        
+   - D: 60-69%
+        
+   - F: < 60%
 
 ![Analytics](./assets/ghost-siem-demo-3.png)
 
