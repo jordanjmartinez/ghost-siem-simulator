@@ -17,11 +17,11 @@ It includes real-time log ingestion, alert detection, incident reporting, and th
 
 **G.H.O.S.T.** includes a full suite of features designed to simulate a real-world SIEM environment. 
 
-It supports live alert generation, scenario-based threat grouping, analyst triage actions, and incident reporting. 
+It supports simulated live alert generation, scenario-based threat grouping, analyst triage actions, and incident reporting. 
 
 Analysts can track their performance over time through a built-in analytics dashboard
 
-## **Simulated Real-Time Alert Generation**
+## **Simulated Live Alert Generation**
 
 ![Events Tab](./assets/ghost-siem-demo-1.png)
 
@@ -49,7 +49,7 @@ False positives are randomly injected within the log stream to evaluate the anal
 
 ![Event Logs](./assets/ghost-siem-demo-2.png)
 
-## **Threat Correlation & Scenario-Based Triage**
+## **Scenario-Based Threat Grouping**
 Automatically clusters related log entries into cohesive threat scenarios using a shared scenario ID, allowing analysts to investigate patterns of malicious activity rather than isolated events.
 - Groups are formed based on predefined attack sequences, such as multi-step exploits (e.g., initial access → command execution → data exfiltration).
 
