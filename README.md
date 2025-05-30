@@ -50,6 +50,8 @@ False positives are randomly injected within the log stream to evaluate the anal
 ## **Grouped Threat Patterns & Analyst Triage Actions**
 **G.H.O.S.T.** automatically groups related log entries into threat patterns using a shared scenario ID, which allows analysts to investigate patterns of malicious activity rather than isolated events.
 
+![Patterns Tab](./assets/ghost-siem-demo-4.png)
+
 - Groups are formed based on predefined attack sequences, such as multi-step exploits (e.g., initial access → command execution → data exfiltration).
 
 - Each group is labeled with a threat category and severity level to assist with triage and prioritization.
@@ -61,8 +63,6 @@ False positives are randomly injected within the log stream to evaluate the anal
   - **Escalate:** Flags the scenario as a confirmed threat
 
   - **Dismiss:** Marks the scenario as a false positive
-
-![Patterns Tab](./assets/ghost-siem-demo-4.png)
 
 - Grouped alerts are displayed in the Patterns Tab, which has two different toggable views:
   
