@@ -53,7 +53,12 @@ Automatically clusters related log entries into cohesive threat scenarios using 
 
 - Each group is labeled with a threat category and severity level to assist with triage and prioritization.
 
-- Analysts can take decisive actions — Investigate, Escalate, or Dismiss — at the scenario level, enabling efficient triage and resolution of grouped threats.
+- Analysts can take decisive actions — Investigate, Escalate, or Dismiss — at the scenario level, enabling efficient triage and resolution of grouped threats:
+  - **Investigate:** Launches the incident report workflow for in-depth analysis and documentation
+
+  - **Escalate:** Flags the scenario as a confirmed threat, increasing critical alert counts and impacting performance metrics
+
+  - **Dismiss:** Marks the scenario as a false positive, contributing to false positive tracking in the Analyst Report Card
 
 - Grouped alerts are displayed in the Patterns Tab, which features a toggle view between:
      - **Active Threats:** Ongoing scenarios requiring analyst attention
@@ -121,7 +126,15 @@ Features a real-time Performance Grade system (A–F) that evaluates analyst acc
 
 ![Analytics](./assets/ghost-siem-demo-3.png)
 
-## **SOC-Themed Interface with Visual Feedback**
+## **Immersive Analyst Interface & Themed UX**
 Delivers a responsive, dark-mode UI enhanced by ghost mascots, toast alerts, animations, and interactive elements to reflect triage status and user input in real time.
+
+- Ghost-themed mascot that provide motivational and contextual feedback based on analyst performance
+  
+- Toast alerts and real-time visual indicators tied to analyst actions and scenario status
+
+- A consistent, high-contrast design that mirrors professional-grade SOC tooling while adding an immersive training experience
+
+ ![Visual](./assets/ghost-siem-demo-10.png)
 
 
