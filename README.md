@@ -4,7 +4,7 @@
 # Introduction
 
 G.H.O.S.T. (Generic Host Operations & Security Tracker) is a full-stack SIEM (Security Information and Event Management) simulation that replicates a real-world Security Operations Center (SOC) environment. It includes real-time log ingestion, alert detection, incident reporting workflows, and interactive threat analytics. Designed for cybersecurity analyst training, scenario-based threat response, and demonstrating SOC processes in a hands-on setting.
----
+
 
 ## Features
 
