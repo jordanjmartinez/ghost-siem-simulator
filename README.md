@@ -1,4 +1,4 @@
-# G.H.O.S.T.- A Full-Stack SOC Simulator for Cybersecurity Training
+# G.H.O.S.T. - A Full-Stack SOC Simulator for Cybersecurity Training
 1. Introduction
 2. Features
    
