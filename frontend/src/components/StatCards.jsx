@@ -22,19 +22,16 @@ const StatCards = () => {
 
   return (
     <div className="bg-[#161b22] rounded-xl p-6 flex flex-col sm:flex-row justify-between items-center text-white">
-      {/* Total Alerts */}
       <div className="flex-1 text-center border-b sm:border-b-0 sm:border-r border-gray-700 px-4 py-2">
         <p className="text-sm text-gray-400">Total Alerts</p>
         <p className="text-3xl font-bold">{stats.total_alerts}</p>
       </div>
 
-      {/* Critical Alerts */}
       <div className={`flex-1 text-center border-b sm:border-b-0 sm:border-r border-gray-700 px-4 py-2 ${stats.critical_alerts > 0 ? 'text-red-500' : 'text-white'}`}>
         <p className="text-sm text-gray-400">Critical Alerts</p>
         <p className="text-3xl font-bold">{stats.critical_alerts}</p>
       </div>
 
-      {/* High Severity Rate */}
       <div className="flex-1 text-center px-4 py-2">
         <p className="text-sm text-gray-400">High Severity Rate</p>
         <p className="text-3xl font-bold">{stats.high_severity_rate}%</p>

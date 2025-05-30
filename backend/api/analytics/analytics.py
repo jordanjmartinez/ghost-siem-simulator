@@ -26,7 +26,6 @@ def get_analytics():
     high = sum(1 for log in logs if log.get("severity") == "high")
     rate = round(((critical + high) / total) * 100, 2) if total else 0.0
 
-    # Weekly alerts by day
     week_count = {d: 0 for d in ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]}
     for log in logs:
         try:
@@ -37,7 +36,6 @@ def get_analytics():
         except Exception:
             continue
 
-    # Latest 5 threats (exclude "normal_traffic")
     latest_threats = sorted(
         [log for log in logs if log.get("label") != "normal_traffic" and log.get("severity")],
         key=lambda x: x.get("timestamp", ""),
@@ -50,7 +48,6 @@ def get_analytics():
         "date": log.get("timestamp", "")[:10]
     } for log in latest_threats]
 
-    # Threat type counts (exclude "normal_traffic")
     threat_counts = {}
     for log in logs:
         label = log.get("label")
@@ -59,7 +56,6 @@ def get_analytics():
 
     threat_type_output = [{"label": k, "count": v} for k, v in threat_counts.items()]
 
-    # ✅ Return everything
     return jsonify({
         "total_alerts": total,
         "critical_alerts": critical,

@@ -60,13 +60,11 @@ const PerformanceGrade = ({ report }) => {
           </PieChart>
         </ResponsiveContainer>
 
-        {/* Center Grade */}
         <div className="absolute inset-0 flex items-center justify-center">
           <span className="text-5xl font-bold text-white">{grade}</span>
         </div>
       </div>
 
-      {/* Caption-style Accuracy and Ghost feedback */}
       <div className="mt-6 text-center text-sm font-mono text-gray-300 space-y-1">
         <p>
           Accuracy:{" "}

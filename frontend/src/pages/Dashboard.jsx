@@ -8,8 +8,8 @@ import { toast } from 'react-toastify';
 const Dashboard = () => {
   const [alertCount, setAlertCount] = useState(0);
   const [reportCount, setReportCount] = useState(0);
-  const [view, setView] = useState("grouped"); // 'grouped' | 'table' | 'analytics' | 'reports'
-  const [resetTrigger, setResetTrigger] = useState(0); // 🔁 state to trigger component refresh
+  const [view, setView] = useState("grouped");
+  const [resetTrigger, setResetTrigger] = useState(0); 
 
   const handleGenerateLogs = () => {
     fetch('http://localhost:5000/api/start-simulator', { method: 'POST' })
@@ -28,7 +28,7 @@ const Dashboard = () => {
       });
       const data = await res.json();
       toast.success(`🔁 ${data.message}`);
-      setResetTrigger(prev => prev + 1); // 🔁 trigger re-render
+      setResetTrigger(prev => prev + 1);
     } catch (err) {
       console.error(err);
       toast.error("Failed to reset simulator");
@@ -39,15 +39,12 @@ const Dashboard = () => {
     <div className="min-h-screen bg-[#0d1117] text-white py-8 px-4 sm:px-8 lg:px-16">
       <div className="max-w-7xl mx-auto space-y-8">
 
-        {/* Header */}
         <header>
           <h1 className="text-4xl font-bold text-white mb-2">SIEM Dashboard</h1>
           <p className="text-gray-400">Real-time alert monitoring and log analysis</p>
         </header>
 
-        {/* Tabbed Box */}
         <div className="bg-[#161b22] rounded-xl p-6">
-          {/* Tabs */}
           <div className="flex border-b border-gray-700 mb-6 space-x-6">
             <button
               onClick={() => setView("grouped")}
@@ -91,7 +88,6 @@ const Dashboard = () => {
             </button>
           </div>
 
-          {/* Tab Content */}
           {view === "grouped" && <GroupedAlerts resetTrigger={resetTrigger} />}
 
           {view === "table" && (

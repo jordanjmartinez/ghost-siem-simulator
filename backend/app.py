@@ -15,7 +15,6 @@ import uuid
 app = Flask(__name__)
 CORS(app)
 
-SURICATA_LOG_PATH = os.path.join("api", "suricata", "suricata_eve.json")
 FAKE_LOG_PATH = os.path.join("logs", "generated_logs.ndjson")
 SCENARIO_PATH = os.path.join("logs", "simulated_attack_logs.ndjson")
 ACTION_LOG_PATH = os.path.join("logs", "analyst_actions.ndjson")
@@ -117,7 +116,6 @@ def generate_normal_event(scenario_id=None):
         "label": "normal_traffic"
     }
 
-    # Merge in custom fields and format message
     base_event.update(dynamic_fields)
     base_event["message"] = config["message_template"].format(**dynamic_fields)
 
@@ -171,20 +169,6 @@ def log_writer(interval=3):
         count += 1
         time.sleep(interval)
 
-@app.route('/api/suricata', methods=['GET'])
-def get_suricata_alerts():
-    alerts = []
-    try:
-        with open(SURICATA_LOG_PATH, "r") as f:
-            for line in f:
-                try:
-                    alerts.append(json.loads(line))
-                except json.JSONDecodeError:
-                    continue
-    except FileNotFoundError:
-        return jsonify({"error": "Suricata log file not found"}), 404
-    return jsonify(alerts)
-
 @app.route('/api/fake-events', methods=['GET'])
 def get_fake_events():
     seen_ids = set()
@@ -206,11 +190,9 @@ def get_fake_events():
 def reset_simulator():
     global current_scenario, paused
 
-    # Stop the thread if needed
     paused = True
     current_scenario = None
 
-    # Clear log-related files
     for filepath in [FAKE_LOG_PATH, ACTION_LOG_PATH, REPORTS_FILE]:
         with open(filepath, "w") as f:
             f.truncate(0)
@@ -267,7 +249,6 @@ def get_analyst_report_card():
         with open(REPORTS_FILE, "r") as f:
             reports = [json.loads(line) for line in f if line.strip()]
 
-        # Step 1: Build lookup from label → category
         label_to_category = {}
         for log in scenario_templates:
             label = log.get("label")
@@ -275,10 +256,8 @@ def get_analyst_report_card():
             if label:
                 label_to_category[label] = category
 
-        # Step 2: Lookup for report scoring
         report_lookup = {r["scenario_id"]: r for r in reports}
 
-        # Step 3: Scoring logic
         resolved_fp = 0
         escalated_tt = 0
         investigated_correct = 0
@@ -344,13 +323,11 @@ def resume_generation():
         with open(FAKE_LOG_PATH, "r") as f:
             all_logs = [json.loads(line) for line in f if line.strip()]
 
-        # Step 1: Look in logs
         for log in all_logs:
             if log.get("scenario_id") == scenario_id and log.get("category"):
                 existing_category = log["category"]
                 break
 
-        # Step 2: If not in logs, check incident_reports.ndjson
         if not existing_category and os.path.exists(REPORTS_FILE):
             with open(REPORTS_FILE, "r") as f:
                 for line in f:
@@ -359,7 +336,6 @@ def resume_generation():
                         existing_category = report["threat_category"]
                         break
 
-        # Step 3: If still missing and resolved, infer category
         inferred_category = None
         if not existing_category and action == "resolve":
             if "normal" in label.lower() or "false" in label.lower():
@@ -367,7 +343,6 @@ def resume_generation():
             else:
                 inferred_category = "Unknown"
 
-        # Step 4: Update logs with normalized status, action, and category
         updated_logs = []
         for log in all_logs:
             if log.get("scenario_id") == scenario_id:
@@ -384,7 +359,6 @@ def resume_generation():
             for log in updated_logs:
                 f.write(json.dumps(log) + "\n")
 
-    # Step 5: Write to analyst action log
     action_log = {
         "timestamp": datetime.now(timezone.utc).isoformat(),
         "scenario_id": scenario_id,
@@ -417,7 +391,6 @@ def get_grouped_alerts():
         if not scenario_id or log.get("label") == "normal_traffic":
             continue
 
-        # Composite key: scenario + pattern
         group_key = f"{scenario_id}_{threat_pattern}"
 
         if group_key not in grouped:
@@ -427,7 +400,7 @@ def get_grouped_alerts():
                 "label": log.get("label", "Unknown"),
                 "status": log.get("status", "unknown"),
                 "severity": log.get("severity", "unknown"),
-                "category": log.get("category", ""),  # ✅ Add this line
+                "category": log.get("category", ""), 
                 "log_count": 0,
                 "logs": []
             }
@@ -438,7 +411,6 @@ def get_grouped_alerts():
     return jsonify(list(grouped.values()))
 
 
-
 @app.route("/api/reports", methods=["POST"])
 def submit_report():
     global current_scenario, paused
@@ -447,9 +419,8 @@ def submit_report():
     scenario_id = data.get("scenario_id")
     submitted_category = data.get("threat_category") 
     data["timestamp"] = datetime.now(timezone.utc).isoformat()
-    data["id"] = str(uuid.uuid4())  # ✅ Add unique ID
+    data["id"] = str(uuid.uuid4()) 
 
-    # === Determine correct category from FAKE_LOG_PATH ===
     correct_category = None
 
     if os.path.exists(FAKE_LOG_PATH):
@@ -464,11 +435,9 @@ def submit_report():
     data["correct_category"] = correct_category
     data["category_match"] = is_correct
 
-    # === Save report ===
     with open(REPORTS_FILE, "a") as f:
         f.write(json.dumps(data) + "\n")
 
-    # === Update logs for that scenario ===
     if scenario_id:
         if os.path.exists(FAKE_LOG_PATH):
             with open(FAKE_LOG_PATH, "r") as f:
@@ -483,7 +452,6 @@ def submit_report():
                 for log in logs:
                     f.write(json.dumps(log) + "\n")
 
-        # === Log analyst action with actual label ===
         label = "unknown"
         if scenario_id and os.path.exists(FAKE_LOG_PATH):
             with open(FAKE_LOG_PATH, "r") as f:
@@ -516,6 +484,7 @@ def get_reports():
         reports = [json.loads(line) for line in f if line.strip()]
     return jsonify(reports)
 
+
 @app.route('/api/reports/<report_id>', methods=['PUT'])
 def update_report(report_id):
     try:
@@ -523,8 +492,7 @@ def update_report(report_id):
             return jsonify({'error': 'Report storage not found'}), 404
 
         updated_data = request.json
-        updated_data['id'] = report_id  # Ensure ID consistency
-
+        updated_data['id'] = report_id 
         updated_reports = []
 
         with open(REPORTS_FILE, 'r') as f:
@@ -548,22 +516,14 @@ def update_report(report_id):
         return jsonify({'error': 'Internal server error'}), 500
 
 
-# def start_background_thread():
-#    thread = Thread(target=log_writer, daemon=True)
- #   thread.start()
-
-# start_background_thread()
-
 @app.route('/api/start-simulator', methods=['POST'])
 def start_simulator():
     global paused
 
-    # Resume if paused
     if paused:
         paused = False
         return jsonify({"message": "Simulator resumed"}), 200
 
-    # Start a new thread if not already running
     running_threads = [t.name for t in threading.enumerate()]
     if "LogWriter" not in running_threads:
         thread = threading.Thread(target=log_writer, kwargs={"interval": 3}, daemon=True)
