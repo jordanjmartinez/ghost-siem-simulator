@@ -143,6 +143,38 @@ Delivers a responsive, dark-mode UI enhanced by ghost mascots, toast alerts, ani
  ![Visual](./assets/ghost-siem-demo-10.png)
 
 
+# Installation & Setup
+
+Follow these steps to run **G.H.O.S.T.** locally on your machine:
+
+1. Clone the repository
+   
+   ```
+   git clone https://github.com/your-username/ghost-siem-simulator.git
+   cd ghost-siem-simulator
+   
+3. Setup the backend
+   
+   ```
+   cd backend
+   pip install -r requirements.txt
+   python app.py
+
+Flask server will start at: http://localhost:5000
+
+3. Setup the frontend UI
+
+   ```
+   cd frontend
+   npm install
+   npm run dev
+
+4. Launch the simulator
+
+   ``` Open your browser
+
+   http://localhost:5173
+
  # Use Cases
 
 **G.H.O.S.T.** is built for cybersecurity students, entry-level analysts, and anyone looking to gain hands-on experience with real-world SOC workflows. Whether you're preparing for a blue team role or building a cybersecurity portfolio, this simulation helps you practice threat detection, incident triage, and reporting in a controlled, interactive environment.
