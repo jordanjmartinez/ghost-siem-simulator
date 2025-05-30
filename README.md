@@ -3,17 +3,31 @@
    
 # Introduction
 
-G.H.O.S.T. (Generic Host Operations & Security Tracker) is a full-stack SIEM (Security Information and Event Management) simulation that replicates a real-world Security Operations Center (SOC) environment. It includes real-time log ingestion, alert detection, incident reporting workflows, and interactive threat analytics. Designed for cybersecurity analyst training, scenario-based threat response, and demonstrating SOC processes in a hands-on setting.
+G.H.O.S.T. (Guided Hub for Operations & Security Triage) is a full-stack SIEM (Security Information and Event Management) simulation that replicates a real-world Security Operations Center (SOC) environment. It includes real-time log ingestion, alert detection, incident reporting workflows, and interactive threat analytics. Designed for cybersecurity analyst training, scenario-based threat response, and demonstrating SOC processes in a hands-on setting.
 
+# Features 
 
-## Features
+**Simulated Real-Time Alert Generation**
+*Generates and streams security event logs with dynamic attack scenarios, including false positives, categorized by threat type and severity for realistic SOC training.
 
-- Real-time alert generation with grouped threat patterns
-- Analyst workflow actions: Investigate, Escalate, Dismiss
-- Incident Report form with IOC tagging and threat classification
-- Analytics dashboard with performance grading and threat breakdown
-- Themed UI with ghost mascots, false positives, and interactive feedback
-- Toggle views for active threats and incident history
+Grouped Threat Detection & Pattern Recognition
+*Automatically clusters related logs by scenario ID, allowing analysts to triage threats based on contextual attack patterns instead of isolated events.
+
+Interactive Analyst Workflow Actions
+*Enables actionable decision-making through built-in analyst responses: Investigate, Escalate, and Dismiss, each triggering state changes and analytics updates.
+
+Structured Incident Reporting with IOC Management
+*Includes a professional-grade reporting system where analysts document incident details, assign threat categories, and tag indicators of compromise (IOCs) using chip-style inputs with deduplication.
+
+Integrated Threat Analytics & Analyst Performance Scoring
+*Features a Splunk-style dashboard with charts showing threat distributions, alert severity breakdowns, and analyst metrics (accuracy, false positive rate, and resolution time).
+
+Immersive SOC-Themed Interface with Visual Feedback
+*Delivers a responsive, dark-mode UI enhanced by ghost mascots, toast alerts, animations, and interactive elements to reflect triage status and user input in real time.
+
+Historical & Active Threat View Toggle
+*Provides seamless switching between active scenarios and historical incident reports to reinforce audit trails and post-incident analysis.
+
 
 ---
 
