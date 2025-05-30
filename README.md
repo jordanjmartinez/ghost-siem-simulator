@@ -16,7 +16,7 @@
 
 Generates and streams security event logs with dynamic attack scenarios, including false positives, categorized by threat type and severity for realistic SOC training.
 
-![Attack Scenario](./assets/ghost-sie,-demo-9.png)
+![Attack Scenario](./assets/ghost-siem-demo-9.png)
 
 
 Each log entry includes a timestamp, event type, severity level, and descriptive message modeled after realistic enterprise scenarios. These include:
