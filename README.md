@@ -47,8 +47,6 @@ These attack patterns are structured to resemble tactics that hackers use in rea
 
 False positives are randomly injected within the log stream to evaluate the analyst’s ability to accurately distinguish between true threats and harmless activity.
 
-![Event Logs](./assets/ghost-siem-demo-2.png)
-
 ## **Grouped Threat Patterns & Analyst Triage Actions**
 **G.H.O.S.T.** automatically groups related log entries into threat patterns using a shared scenario ID, which allows analysts to investigate patterns of malicious activity rather than isolated events.
 
@@ -64,14 +62,14 @@ False positives are randomly injected within the log stream to evaluate the anal
 
   - **Dismiss:** Marks the scenario as a false positive
 
+![Patterns Tab](./assets/ghost-siem-demo-4.png)
+
 - Grouped alerts are displayed in the Patterns Tab, which features a toggle view between:
      - **Active Threats:** Ongoing scenarios requiring analyst attention
        
      - **Past Incidents:** Resolved, escalated, or investigated threats, stored for audit trails and post-incident review
 
 This approach mirrors how real-world SIEM platforms correlate events to detect and respond to complex, multi-stage attacks.
-
-![Patterns Tab](./assets/ghost-siem-demo-4.png)
 
 ![Past Incidents](./assets/ghost-siem-demo-7.png)
 
