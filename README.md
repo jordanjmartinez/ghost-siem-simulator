@@ -11,7 +11,7 @@
 
 **G.H.O.S.T.** (Guided Help for Operations & Security Triage) is a full-stack **Security Information and Event Management** (SIEM) simulation that replicates a real-world **Security Operations Center** (SOC) environment.
 
-It includes real-time log ingestion, alert detection, incident reporting, and threat analytics. Designed for cybersecurity analyst training, scenario-based threat response, and demonstrating SOC processes in a hands-on setting.
+It includes real-time log ingestion, alert detection, incident reporting, and threat analytics. Designed for cybersecurity analyst training, scenario-based threat response, and demonstrating a T1 SOC analyst workflow in a home-lab setting.
 
 # Features 
 
@@ -21,10 +21,11 @@ It includes real-time log ingestion, alert detection, incident reporting, and th
 
 ![Events Tab](./assets/ghost-siem-demo-1.png)
 
-Generates and streams security event logs with dynamic attack scenarios, including false positives, categorized by threat type and severity for realistic SOC training.
+Clicking on Simulate Events generates a stream of security event logs from various log sources (Firewall, Application) acting as normal event traffic in a SIEM environment.
+
+After a couple of logs, an event will be injected into the SIEM mimicking an attack from a hacker
 
 ![Attack Scenario](./assets/ghost-siem-demo-9.png)
-
 
 Each log entry includes a timestamp, event type, severity level, and descriptive message modeled after realistic enterprise scenarios. These include:
 
