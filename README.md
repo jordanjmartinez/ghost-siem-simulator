@@ -167,7 +167,7 @@ Flask server will start at: http://localhost:5000
    ```
    cd frontend
    npm install
-   npm run dev
+   npm start
 
 4. Launch the simulator
 
