@@ -16,6 +16,9 @@
 
 Generates and streams security event logs with dynamic attack scenarios, including false positives, categorized by threat type and severity for realistic SOC training.
 
+![Attack Scenario](./assets/ghost-sie,-demo-9.png)
+
+
 Each log entry includes a timestamp, event type, severity level, and descriptive message modeled after realistic enterprise scenarios. These include:
 
 - Command and & Control (C2) via DNS tunneling
@@ -30,6 +33,8 @@ Each log entry includes a timestamp, event type, severity level, and descriptive
 
 The generated logs mimic the diversity and noise found in actual SIEM environments by mixing malicious activity, normal user behavior, and false positives — challenging analysts to distinguish between them accurately.
 
+![Event Logs](./assets/ghost-siem-demo-2.png)
+
 Displayed in the Events Tab, the interface supports:
 
 - Live pagination and adjustable rows per page
@@ -42,10 +47,10 @@ Displayed in the Events Tab, the interface supports:
 
 This system forms the core of **G.H.O.S.T.’s** interactive alert simulation, offering a hands-on training loop for analysts to detect, classify, and respond to evolving threat patterns.
 
-**Grouped Threat Detection & Pattern Recognition**
+## **Grouped Threat Detection & Pattern Recognition**
 - Automatically clusters related logs by scenario ID, allowing analysts to triage threats based on contextual attack patterns instead of isolated events.
 
-**Interactive Analyst Workflow Actions**
+## **Interactive Analyst Workflow Actions**
 - Enables actionable decision-making through built-in analyst responses: Investigate, Escalate, and Dismiss, each triggering state changes and analytics updates.
 
 ## **Incident Reporting & Threat Categorization**
