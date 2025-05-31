@@ -25,7 +25,7 @@ It supports simulated live alert generation, grouped threat patterns, analyst tr
 
 ---
 
-## **Simulated Live Alert Generation**
+## **2. Simulated Live Alert Generation**
 
 ![Events Tab](./assets/ghost-siem-demo-1.png)
 
