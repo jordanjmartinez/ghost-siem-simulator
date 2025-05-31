@@ -124,6 +124,8 @@ The **Analyst Report Card** displays:
   - Dismissed False Positives
     
   - Escalated True Threats
+
+  - Correct Investigations
     
   - Misclassified Alerts
     
