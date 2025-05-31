@@ -6,18 +6,24 @@
 ### 2. [Features](#features)
 ### 3. [Installation & Setup](#installation--setup)
 ### 4. [Use Cases](#use-cases)
-   
+
+---
+
 # Introduction
 
 **G.H.O.S.T.** (Guided Help for Operations & Security Triage) is a full-stack **Security Information and Event Management** (SIEM) simulation that replicates a real-world **Security Operations Center** (SOC) environment.
 
 It includes live alert generation, incident reporting, threat analytics, and grouped threat triage. The platform is designed for cybersecurity analyst training, blue team workflows, and hands-on portfolio development in a home lab environment.
 
+---
+
 # Features 
 
 **G.H.O.S.T.** includes a full suite of features designed to simulate a real-world SIEM environment. 
 
 It supports simulated live alert generation, grouped threat patterns, analyst triage actions, incident reporting, threat analytics, and performance scoring
+
+---
 
 ## **Simulated Live Alert Generation**
 
