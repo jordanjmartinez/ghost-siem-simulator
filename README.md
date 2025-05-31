@@ -48,7 +48,7 @@ False positives are randomly injected within the log stream to evaluate the anal
 ---
 
 ## **Grouped Threat Patterns & Analyst Triage Actions**
-**G.H.O.S.T.** automatically groups related logs into threat scenarios using a shared `scenario_id`, enabling contextual investigation over isolated alerts.
+**G.H.O.S.T.** automatically groups related logs into threat scenarios using a shared `scenario_id`, enabling more detailed investigations into grouped threat patterns over isolated alerts.
 
 ![Patterns Tab](./assets/ghost-siem-demo-4.png)
 
