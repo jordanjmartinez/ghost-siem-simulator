@@ -168,10 +168,9 @@ Follow these steps to run **G.H.O.S.T.** locally on your machine:
       npm install
       npm start
       
-### Launch the Simulator
+### 4. Launch the simulator
 
-   - Open your browser and navigate to:
-     (http://localhost:3000)
+Open your browser and navigate to: (http://localhost:3000)
       
       
 
