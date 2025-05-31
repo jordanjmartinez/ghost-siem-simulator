@@ -164,18 +164,18 @@ Follow these steps to run **G.H.O.S.T.** locally on your machine:
 
 ### 1. Clone the repository
   
-      git clone https://github.com/your-username/ghost-siem-simulator.git
+      git clone https://github.com/jordanjmartinez/ghost-siem-simulator.git
       cd ghost-siem-simulator
 
 ### 2. Setup the backend
 
-      cd backend
+      cd ghost-siem-simulator/backend
       pip install -r requirements.txt
       python app.py
 
 ### 3. Setup the frontend 
 
-      cd frontend
+      cd ghost-siem-simulator/frontend
       npm install
       npm start
       
