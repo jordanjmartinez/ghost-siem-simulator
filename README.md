@@ -2,10 +2,10 @@
 
 ## Table of Contents
 
-1. Introduction
-2. Features
-3. Installation & Setup
-4. Use Cases
+1. [Introduction](#introduction)
+2. [Features](#features)
+3. [Installation & Setup](#installation--setup)
+4. [Use Cases](#use-cases)
    
 # Introduction
 
