@@ -155,6 +155,7 @@ Delivers a responsive, dark-mode UI that mimics the look and feel of modern SIEM
  ![Visual](./assets/ghost-siem-demo-10.png)
 
  ---
+<<<<<<< HEAD
 
 # Installation & Setup
 
@@ -202,4 +203,49 @@ The project was built as a practical platform for learning and demonstrating cyb
   
 - Showcase full-stack security engineering capabilities in a portfolio project
 
+=======
+>>>>>>> a3d779c (README and requirements.txt)
 
+# Installation & Setup
+
+Follow these steps to run **G.H.O.S.T.** locally on your machine:
+
+### 1. Clone the repository
+   
+      ```
+      git clone https://github.com/your-username/ghost-siem-simulator.git
+      cd ghost-siem-simulator
+
+### 2. Setup the backend
+   
+      ```
+      cd backend
+      pip install -r requirements.txt
+      python app.py
+
+### 3. Setup the frontend 
+
+      ```
+      cd frontend
+      npm install
+      npm start
+      
+### 4. Launch the simulator
+
+Open your browser and navigate to: (http://localhost:3000)
+      
+ ---     
+
+ # Use Cases
+
+**G.H.O.S.T.** is built for cybersecurity students, entry-level analysts, and anyone looking to gain hands-on experience with real-world SOC workflows. 
+
+Whether you're preparing for a blue team role or building a cybersecurity portfolio, this simulation helps you practice threat detection, incident triage, and reporting in a controlled, interactive environment.
+
+The project was built as a practical platform for learning and demonstrating cybersecurity skills, with key goals to:
+ 
+- Practice analyst workflows in a simulated SOC environment
+  
+- Demonstrate threat detection and incident response skills
+  
+- Train new blue team members or students in realistic triage scenarios
