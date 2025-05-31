@@ -72,11 +72,11 @@ False positives are randomly injected within the log stream to evaluate the anal
 
 
 ## **Incident Reporting & Threat Categorization**
-Enables analysts to submit professional-grade incident reports that capture key investigation details for audit, triage, and post-incident review.
+Enables analysts to submit incident reports that capture key investigation details for audit, triage, and post-incident review.
 
 ![Incident Report](./assets/ghost-siem-demo-5.png)
 
-Includes an Incident Report Form with the following fields
+Includes an Incident Report Form with the following fields:
   
    - Title
        
