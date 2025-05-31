@@ -105,7 +105,9 @@ Each report is timestamped and stored for review, and displayed in the Reports T
  ![Reports Tab](./assets/ghost-siem-demo-6.png)
 
 ## **Threat Analytics & Analyst Performance Scoring**
-Includes a comprehensive analytics panel that provides real-time visibility into SIEM alert activity, displaying total alerts, critical alert counts, high severity rates, and analyst performance metrics
+Includes an analytics panel that provides real-time visibility into SIEM alert activity, displaying total alerts, critical alert counts, high severity rates, and analyst performance metrics
+
+![Analytics](./assets/ghost-siem-demo-3.png)
   
 A detailed Analyst Report Card showing key metrics:
      
@@ -117,7 +119,7 @@ A detailed Analyst Report Card showing key metrics:
     
   - Total Actions
           
-Features a real-time Performance Grade system (A–F) that evaluates analyst accuracy by calculating the ratio of correct actions — including dismissed false positives, escalated true threats, and                correct investigations — against misclassified alerts, and assigns a grade based on overall performance.
+Features a real-time Performance Grade system (A–F) that evaluates analyst accuracy by calculating the ratio of correct actions — including dismissed false positives, escalated true threats, and correct investigations — against misclassified alerts, assigning a grade based on overall performance.
 
    **Grade Scale:**
    - A: >= 90%
@@ -130,16 +132,15 @@ Features a real-time Performance Grade system (A–F) that evaluates analyst acc
         
    - F: < 60%
 
-![Analytics](./assets/ghost-siem-demo-3.png)
 
 ## **Immersive Analyst Interface & Themed UX**
-Delivers a responsive, dark-mode UI enhanced by ghost mascots, toast alerts, animations, and interactive elements to reflect triage status and user input in real time.
+Delivers a responsive, dark-mode UI that mimics the look and feel of popular SIEM platforms like Splunk
 
-- Ghost-themed mascot that provide motivational and contextual feedback based on analyst performance
+- Ghost-themed mascot that guides the analyst and provies contextual feedback based on analyst performance
   
-- Toast alerts and real-time visual indicators tied to analyst actions and scenario status
+- Interactive notifications and status changes help simulate the responsiveness of enterprise SOC dashboards
 
-- A consistent, high-contrast design that mirrors professional-grade SOC tooling while adding an immersive training experience
+- High-contrast, SOC-inspired layout designed for clarity, accessibility, and immersive hands-on learning
 
  ![Visual](./assets/ghost-siem-demo-10.png)
 
