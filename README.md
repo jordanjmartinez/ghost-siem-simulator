@@ -70,13 +70,14 @@ False positives are randomly injected within the log stream to evaluate the anal
 
 ![Past Incidents](./assets/ghost-siem-demo-7.png)
 
+---
 
 ## **Incident Reporting & Threat Categorization**
-Enables analysts to submit incident reports that capture key investigation details for audit, triage, and post-incident review.
+Allows analysts to submit detailed incident reports capturing investigation results, threat classification, and remediation steps.
 
 ![Incident Report](./assets/ghost-siem-demo-5.png)
 
-Includes an Incident Report Form with the following fields:
+Includes an **Incident Report Form** with the following fields:
   
    - Title
        
@@ -94,20 +95,23 @@ Includes an Incident Report Form with the following fields:
 
   ![Reports Tab](./assets/ghost-siem-demo-6.png)
 
-Each report is timestamped and stored for review, and displayed in the Reports Tab, where analysts can:
+Reports are stored and displayed in the **Reports Tab**, where analysts can:
    
    - View and manage reports
         
    - Edit report details
         
-   - Export reports for documentation and incident tracking
+   - Export reports for documentation and tracking
+
+---
 
 ## **Threat Analytics & Performance Scoring**
-Includes an analytics panel that provides real-time visibility into SIEM alert activity, displaying total alerts, critical alert counts, high severity rates, and analyst performance metrics
+
+Includes a real-time analytics dashboard displaying total alerts, critical alert counts, high severity rates, and analyst performance metrics
 
 ![Analytics](./assets/ghost-siem-demo-3.png)
   
-A detailed Analyst Report Card showing key metrics:
+The **Analyst Report Card** displays:
      
   - Dismissed False Positives
     
