@@ -145,7 +145,7 @@ Grades are calculated by comparing correct actions (escalate/investigate/dismiss
 
 ---
 
-## **V. Immersive Analyst Interface & Themed UX**
+## **V. Interactive Analyst Experience with Real-Time Feedback**
 Delivers a responsive, dark-mode UI that mimics the look and feel of modern SIEM platforms like Splunk.
 
 - **Ghost-themed mascot** that guides the analyst and provides contextual feedback based on analyst performance
