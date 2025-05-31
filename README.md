@@ -45,28 +45,30 @@ These attack patterns are structured to resemble tactics that hackers use in rea
 
 False positives are randomly injected within the log stream to evaluate the analyst’s ability to accurately distinguish between true threats and harmless activity.
 
+---
+
 ## **Grouped Threat Patterns & Analyst Triage Actions**
-**G.H.O.S.T.** automatically groups related log entries into threat patterns using a shared scenario ID, which allows analysts to investigate patterns of malicious activity rather than isolated events.
+**G.H.O.S.T.** automatically groups related logs into threat scenarios using a shared `scenario_id`, enabling contextual investigation over isolated alerts.
 
 ![Patterns Tab](./assets/ghost-siem-demo-4.png)
 
-- Groups are formed based on predefined attack sequences, such as multi-step exploits (e.g., initial access → command execution → data exfiltration).
+- Groups are formed based on predefined attack sequences, such as multi-step exploits: (e.g., initial access → command execution → data exfiltration).
 
-- Each group is labeled with a Notable Event type and a severity level to assist with triage and prioritization.
+- Each group is labeled with a **Notable Event** type and a **severity level** 
 
-- Analysts can take decisive actions — Investigate, Escalate, or Dismiss
+- Analysts can take decisive actions — **Investigate, Escalate, or Dismiss:**
   
-  - **Investigate:** Initiates an in-depth investigation and opens the incident report workflow
+  - **Investigate:** Opens the incident report workflow 
 
   - **Escalate:** Flags the scenario as a confirmed threat
 
   - **Dismiss:** Marks the scenario as a false positive
 
-- Grouped alerts are displayed in the Patterns Tab, which has two different toggable views:
+Grouped alerts appear in the **Patterns Tab**, which includes a toggle to switch between:
   
-     - **Active Threats:** Unresolved scenarios that require analyst attention
+   - **Active Threats:** - Unresolved scenarios that require analyst attention
        
-     - **Past Incidents:** Previously investigated, escalated, or dismissed scenarios, preserved for audit and review
+   - **Past Incidents:** - Resolved or reviewed scenarios for post-analysis
 
 ![Past Incidents](./assets/ghost-siem-demo-7.png)
 
