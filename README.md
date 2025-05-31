@@ -25,7 +25,7 @@ It supports simulated live alert generation, grouped threat patterns, analyst tr
 
 ---
 
-## **2. Simulated Live Alert Generation**
+## **I. Simulated Live Alert Generation**
 
 ![Events Tab](./assets/ghost-siem-demo-1.png)
 
@@ -53,7 +53,7 @@ False positives are randomly injected within the log stream to evaluate the anal
 
 ---
 
-## **Grouped Threat Patterns & Analyst Triage Actions**
+## **II. Grouped Threat Patterns & Analyst Triage Actions**
 **G.H.O.S.T.** automatically groups related logs into threat scenarios using a shared `scenario_id`, enabling more detailed investigations into grouped threat patterns over isolated alerts.
 
 ![Patterns Tab](./assets/ghost-siem-demo-4.png)
@@ -80,7 +80,7 @@ Grouped alerts appear in the **Patterns Tab**, which includes a toggle to switch
 
 ---
 
-## **Incident Reporting & Threat Categorization**
+## **III. Incident Reporting & Threat Categorization**
 Allows analysts to submit detailed incident reports capturing investigation results, threat classification, and remediation steps.
 
 ![Incident Report](./assets/ghost-siem-demo-5.png)
@@ -113,7 +113,7 @@ Reports are stored and displayed in the **Reports Tab**, where analysts can:
 
 ---
 
-## **Threat Analytics & Performance Scoring**
+## **IV. Threat Analytics & Performance Scoring**
 
 Includes a real-time analytics dashboard displaying total alerts, critical alert counts, high severity rates, and analyst performance metrics
 
@@ -143,7 +143,7 @@ Grades are calculated by comparing correct actions (escalate/investigate/dismiss
 
 ---
 
-## **Immersive Analyst Interface & Themed UX**
+## **V. Immersive Analyst Interface & Themed UX**
 Delivers a responsive, dark-mode UI that mimics the look and feel of modern SIEM platforms like Splunk.
 
 - **Ghost-themed mascot** that guides the analyst and provides contextual feedback based on analyst performance
