@@ -200,4 +200,4 @@ The project was built as a practical platform for learning and demonstrating cyb
   
 - Train new blue team members or students in realistic triage scenarios
   
-- Showcase full-stack security engineering capabilities in a portfolio project
+- Showcase SOC analyst capabilities in a portfolio project
