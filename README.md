@@ -162,25 +162,25 @@ Delivers a responsive, dark-mode UI that mimics the look and feel of modern SIEM
 
 Follow these steps to run **G.H.O.S.T.** locally on your machine:
 
-### 1. Clone the repository
+### 1. Clone the Repository
   
       git clone https://github.com/jordanjmartinez/ghost-siem-simulator.git
       cd ghost-siem-simulator
 
-### 2. Setup the backend
+### 2. Setup the Backend
 
       cd ghost-siem-simulator/backend
       pip install -r requirements.txt
       python app.py
 
-### 3. Setup the frontend 
+### 3. Setup the Frontend 
 
       cd ghost-siem-simulator/frontend
       npm install
       npm start
       
       
-### 4. Launch the simulator
+### 4. Launch the Simulator
 
 Open your browser and navigate to: (http://localhost:3000)
       
