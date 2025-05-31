@@ -1,4 +1,4 @@
-# G.H.O.S.T - SOC Simulator for Cybersecurity Training
+#👻 G.H.O.S.T - SOC Simulator for Cybersecurity Training
 
 ## Table of Contents
 
