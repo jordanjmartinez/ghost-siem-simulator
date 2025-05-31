@@ -203,9 +203,6 @@ The project was built as a practical platform for learning and demonstrating cyb
   
 - Showcase full-stack security engineering capabilities in a portfolio project
 
-=======
->>>>>>> a3d779c (README and requirements.txt)
-
 # Installation & Setup
 
 Follow these steps to run **G.H.O.S.T.** locally on your machine:
