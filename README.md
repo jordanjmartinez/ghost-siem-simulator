@@ -155,7 +155,6 @@ Delivers a responsive, dark-mode UI that mimics the look and feel of modern SIEM
  ![Visual](./assets/ghost-siem-demo-10.png)
 
  ---
-<<<<<<< HEAD
 
 # Installation & Setup
 
