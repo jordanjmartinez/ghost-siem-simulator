@@ -181,6 +181,7 @@ Follow these steps to run **G.H.O.S.T.** locally on your machine:
       cd frontend
       npm install
       npm start
+      ```
       
 ### 4. Launch the simulator
 
