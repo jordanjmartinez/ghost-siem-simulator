@@ -3,9 +3,9 @@
 ## Table of Contents
 
 ### 1. [Introduction](#introduction)
-2. [Features](#features)
-3. [Installation & Setup](#installation--setup)
-4. [Use Cases](#use-cases)
+### 2. [Features](#features)
+### 3. [Installation & Setup](#installation--setup)
+### 4. [Use Cases](#use-cases)
    
 # Introduction
 
