@@ -117,19 +117,19 @@ A detailed Analyst Report Card showing key metrics:
     
   - Total Actions
           
-Features a real-time Performance Grade system (A–F) that evaluates analyst accuracy by calculating the ratio of correct actions — including dismissed false positives, escalated true threats, and correct investigations — against misclassified alerts, assigning a grade based on overall performance.
+Analyst performance is graded using an A–F scale:
 
-   **Grade Scale:**
-   - A: >= 90%
-        
-   - B: 80-89%
-        
-   - C: 70-79%
-        
-   - D: 60-69%
-        
-   - F: < 60%
+| Grade | Accuracy |
+|-------|----------|
+| A     | ≥ 90%    |
+| B     | 80–89%   |
+| C     | 70–79%   |
+| D     | 60–69%   |
+| F     | < 60%    |
 
+Grades are calculated by comparing correct actions (escalate/investigate/dismiss) against misclassifications.
+
+---
 
 ## **Immersive Analyst Interface & Themed UX**
 Delivers a responsive, dark-mode UI that mimics the look and feel of popular SIEM platforms like Splunk
