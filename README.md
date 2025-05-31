@@ -72,7 +72,7 @@ False positives are randomly injected within the log stream to evaluate the anal
 
 ---
 
-## **Incident Reporting & Threat Categorization**
+## 📝 **Incident Reporting & Threat Categorization**
 Allows analysts to submit detailed incident reports capturing investigation results, threat classification, and remediation steps.
 
 ![Incident Report](./assets/ghost-siem-demo-5.png)
