@@ -154,6 +154,7 @@ Delivers a responsive, dark-mode UI that mimics the look and feel of modern SIEM
 
  ![Visual](./assets/ghost-siem-demo-10.png)
 
+ ---
 
 # Installation & Setup
 
@@ -183,7 +184,7 @@ Follow these steps to run **G.H.O.S.T.** locally on your machine:
 
 Open your browser and navigate to: (http://localhost:3000)
       
-      
+ ---     
 
  # Use Cases
 
