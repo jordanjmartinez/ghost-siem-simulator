@@ -17,9 +17,7 @@ It includes real-time log ingestion, alert detection, incident reporting, and th
 
 **G.H.O.S.T.** includes a full suite of features designed to simulate a real-world SIEM environment. 
 
-It supports simulated live alert generation, grouped threat patterns, analyst triage actions, and incident reporting. 
-
-Analysts can track their performance over time through a built-in analytics dashboard
+It supports simulated live alert generation, grouped threat patterns, analyst triage actions, incident reporting, threat analytics, and performance scoring
 
 ## **Simulated Live Alert Generation**
 
@@ -76,6 +74,8 @@ False positives are randomly injected within the log stream to evaluate the anal
 ## **Incident Reporting & Threat Categorization**
 Enables analysts to submit professional-grade incident reports that capture key investigation details for audit, triage, and post-incident review.
 
+![Incident Report](./assets/ghost-siem-demo-5.png)
+
 Includes an Incident Report Form with the following fields
   
    - Title
@@ -91,8 +91,8 @@ Includes an Incident Report Form with the following fields
    - Mitigation Steps
        
    - Status
- 
-![Incident Report](./assets/ghost-siem-demo-5.png)
+
+  ![Reports Tab](./assets/ghost-siem-demo-6.png)
 
 Each report is timestamped and stored for review, and displayed in the Reports Tab, where analysts can:
    
@@ -102,9 +102,7 @@ Each report is timestamped and stored for review, and displayed in the Reports T
         
    - Export reports for documentation and incident tracking
 
- ![Reports Tab](./assets/ghost-siem-demo-6.png)
-
-## **Threat Analytics & Analyst Performance Scoring**
+## **Threat Analytics & Performance Scoring**
 Includes an analytics panel that provides real-time visibility into SIEM alert activity, displaying total alerts, critical alert counts, high severity rates, and analyst performance metrics
 
 ![Analytics](./assets/ghost-siem-demo-3.png)
