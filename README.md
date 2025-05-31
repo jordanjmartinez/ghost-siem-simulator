@@ -11,7 +11,7 @@
 
 **G.H.O.S.T.** (Guided Help for Operations & Security Triage) is a full-stack **Security Information and Event Management** (SIEM) simulation that replicates a real-world **Security Operations Center** (SOC) environment.
 
-It includes real-time log ingestion, alert detection, incident reporting, and threat analytics. Designed for cybersecurity analyst training, scenario-based threat response, and demonstrating a T1 SOC analyst workflow in a home-lab setting.
+It includes live alert generation, incident reporting, threat analytics, and grouped threat triage. The platform is designed for cybersecurity analyst training, blue team workflows, and hands-on portfolio development in a home lab environment.
 
 # Features 
 
@@ -25,11 +25,11 @@ It supports simulated live alert generation, grouped threat patterns, analyst tr
 
 Clicking Simulate Events generates a stream of security event logs from various log sources (e.g., firewall, application, operating system), simulating normal background traffic commonly observed in a real SIEM environment.
 
-After several normal benign logs are generated, the simulator injects a threat scenario, mimicking a coordinated attack by a malicious actor.
+After several benign logs are generated, a simulated attack scenario is injected to emulate a coordinated threat actor action.
 
 ![Attack Scenario](./assets/ghost-siem-demo-9.png)
 
-These attack patterns are structured to resemble tactics that hackers use in real-world scenarios, allowing analysts to practice detecting many different threat types. Simulated patterns include:
+These patterns are structured to resemble real-world hacker tactics, allowing analysts to practice identifying various threat types, including:
 
 - **Brute Force Attacks**
 
@@ -74,7 +74,7 @@ Grouped alerts appear in the **Patterns Tab**, which includes a toggle to switch
 
 ---
 
-## 📝 **Incident Reporting & Threat Categorization**
+## **Incident Reporting & Threat Categorization**
 Allows analysts to submit detailed incident reports capturing investigation results, threat classification, and remediation steps.
 
 ![Incident Report](./assets/ghost-siem-demo-5.png)
@@ -138,13 +138,13 @@ Grades are calculated by comparing correct actions (escalate/investigate/dismiss
 ---
 
 ## **Immersive Analyst Interface & Themed UX**
-Delivers a responsive, dark-mode UI that mimics the look and feel of popular SIEM platforms like Splunk
+Delivers a responsive, dark-mode UI that mimics the look and feel of modern SIEM platforms like Splunk.
 
-- Ghost-themed mascot that guides the analyst and provies contextual feedback based on analyst performance
+- **Ghost-themed mascot** that guides the analyst and provies contextual feedback based on analyst performance
   
-- Interactive notifications and status changes help simulate the responsiveness of enterprise SOC dashboards
-
-- High-contrast, SOC-inspired layout designed for clarity, accessibility, and immersive hands-on learning
+- **Interactive notifications and scenario indicators** offer real-time visual feedback
+  
+- **High-contrast SOC interface** designed for clarity, accessibility, and realistic analyst workflows
 
  ![Visual](./assets/ghost-siem-demo-10.png)
 
