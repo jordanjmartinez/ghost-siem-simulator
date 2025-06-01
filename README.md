@@ -131,7 +131,7 @@ The **Analyst Report Card** displays:
     
   - Total Actions
           
-Analyst performance is graded using an A–F scale:
+**Performance Grade** uses an A–F scale:
 
 | Grade | Accuracy |
 |-------|----------|
