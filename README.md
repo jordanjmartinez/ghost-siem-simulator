@@ -1,4 +1,4 @@
-# G.H.O.S.T. Security Operations Simulator
+# G.H.O.S.T. Security Operations Center Simulator
 
 ## Table of Contents
 
