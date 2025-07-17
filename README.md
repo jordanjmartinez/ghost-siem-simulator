@@ -49,7 +49,7 @@ These patterns are structured to resemble real-world hacker tactics, allowing an
 
 - **Insider Threats**
 
-False positives are randomly injected within the log stream to evaluate the analyst’s ability to accurately distinguish between true threats and harmless activity.
+False positives are intentionally injected into the log stream to assess the analyst’s ability to accurately differentiate between legitimate threats and benign activity.
 
 ---
 
