@@ -1,4 +1,4 @@
-# G.H.O.S.T. Security Operations Center Simulator
+# Ghost SIEM
 
 ## Table of Contents
 
