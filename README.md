@@ -11,7 +11,7 @@
 
 # 1. Introduction
 
-**G.H.O.S.T.** (Guided Hands-on Operations & Security Training) is a full-stack **Security Information and Event Management** (SIEM) simulation that replicates a real-world **Security Operations Center** (SOC) environment.
+**Ghost** is a full-stack **Security Information and Event Management** (SIEM) simulation that replicates a real-world **Security Operations Center** (SOC) environment.
 
 The platform is designed for cybersecurity analyst training, blue team workflows, and hands-on portfolio development in a home lab environment.
 
@@ -19,7 +19,7 @@ The platform is designed for cybersecurity analyst training, blue team workflows
 
 # 2. Features 
 
-**G.H.O.S.T.** includes a full suite of features designed to simulate a real-world SIEM environment. 
+**Ghost** includes a full suite of features designed to simulate a real-world SIEM environment. 
 
 It supports simulated live alert generation, grouped threat patterns, analyst triage actions, incident reporting, threat analytics, and performance scoring
 
@@ -54,7 +54,7 @@ False positives are intentionally injected into the log stream to assess the ana
 ---
 
 ## **Grouped Threat Patterns & Analyst Triage Actions**
-**G.H.O.S.T.** automatically groups related logs into threat scenarios using a shared `scenario_id`, enabling more detailed investigations into grouped threat patterns over isolated alerts.
+**Ghost** automatically groups related logs into threat scenarios using a shared `scenario_id`, enabling more detailed investigations into grouped threat patterns over isolated alerts.
 
 ![Patterns Tab](./assets/ghost-siem-demo-4.png)
 
@@ -160,7 +160,7 @@ Delivers a responsive, dark-mode UI that mimics the look and feel of modern SIEM
 
 # 3. Installation & Setup
 
-Follow these steps to run **G.H.O.S.T.** locally on your machine:
+Follow these steps to run **Ghost** locally on your machine:
 
 ### 1. Clone the Repository
   
@@ -188,7 +188,7 @@ Open your browser and navigate to: (http://localhost:3000)
 
  # 4. Use Cases
 
-**G.H.O.S.T.** is built for cybersecurity students, entry-level analysts, and anyone looking to gain hands-on experience with real-world SOC workflows. 
+**Ghost** is built for cybersecurity students, entry-level analysts, and anyone looking to gain hands-on experience with real-world SOC workflows. 
 
 Whether you're preparing for a blue team role or building a cybersecurity portfolio, this simulation helps you practice threat detection, incident triage, and reporting in a controlled, interactive environment.
 
